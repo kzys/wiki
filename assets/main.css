@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 1rem;
+
+    font-family: sans-serif;
+    color: #000;
+    background: #fff;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+code {
+    background: #eee;
+    font-size: .9rem;
+}

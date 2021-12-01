@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<div>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    kind:{{ .Kind }}
+</div>
+
+{{ range sort .Pages }}
+<h2>{{ .Title }}</h2>
+{{ .Content }}
+{{ end }}
+
+
+{{ end }}

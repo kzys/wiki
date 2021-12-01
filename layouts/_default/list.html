@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+<div>
+    <h1>
+        <a href="/"><i class="fas fa-home"></i></a> /
+        <i class="fas fa-folder"></i>
+        {{ .Title }}
+    </h1>
+    {{ .Content }}
+</div>
+
+{{ range sort .Page.Pages }}
+<article class="state-{{ .Params.state }}">
+    {{ if (ne .Title "") }}<h2>{{ .Title }}</h2>{{ end }}
+    <div class="meta">
+        <span class="state state-{{ .Params.state }}">{{ .Params.state }}</span>
+        {{ .File.Path }}
+    </div>
+    {{ .Content }}
+</article>
+{{ end }}
+
+
+
+{{ end }}

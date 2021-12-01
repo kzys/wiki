@@ -1,0 +1,6 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "notes.8-p.info"
+
+[permalinks]
+notes = "/n/:slug/"

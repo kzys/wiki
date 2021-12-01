@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+<h1>
+    <i class="fas fa-home"></i>
+    {{ .Title }}
+</h1>
+<div class="content">{{.Content}}</div>
+
+<ul id="tree">
+    {{ range sort .Site.Sections }}
+    <li>
+        <i class="fas fa-folder"></i>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <ul>
+            {{ range sort .Pages }}
+            <li>
+                {{ .Title }}
+                <span class="state state-{{ .Params.state }}">{{ .Params.state }}</span>
+            </li>
+            {{ end }}
+        </ul>
+    </li>
+    {{ end }}
+</ul>
+
+{{ end }}

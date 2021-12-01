@@ -1,6 +1,2 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "notes.8-p.info"
-
-[permalinks]
-notes = "/n/:slug/"
+baseURL = "https://wiki-daz.pages.dev/"
+title = "wiki.8-p.info"
